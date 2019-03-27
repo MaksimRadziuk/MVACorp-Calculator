@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>S. Mordvincev</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" type="image/png" href="favicon32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="template/css/bootstrap.min.css">
+    <link rel="stylesheet" href="template/css/bootstrap-theme.min.css">
+
+    <link href="template/css/all.css" type="text/css" rel="stylesheet" />
+    <link href="template/css/page.calculator.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="cookie-branch">
+        <div>
+            <p>Для обеспечения максимального удобства пользователям сайт MVACorp использует файлы cookie. Продолжая просматривать сайт вы соглашаетесь с их использованием</p>
+            <a href="#">Подробнее</a>
+        </div>
+        <a href="#" class="close-cookies"></a>
+    </div>
+
+    <section id="section-calc">
+    <!-- HEADER -->
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo-box">
+            <div class="logo-block"></div>
+            <div class="text-block">от экспертов <br>интернет-маркетинга</div>
+        </div>
+
+        <div class="phones">
+            <a href="tel:+788009999999">8 (800) 999 99 99</a>
+            <a href="tel:+783833333333">8 (383) 333 33 33</a>
+            <a href="#" class="call-order" onClick="getElementById('win1').removeAttribute('style');" title="Заказать обратный звонок"></a>
+        </div>
+
+        <div class="languages">
+            <a href="#" class="active">ru</a> | 
+            <a href="#">en</a>
+        </div>
+
+        <button class="order" onClick="getElementById('win').removeAttribute('style');" type="button"><a href="#">заказать</a></button>
+        
+    <!-- CONTENT -->
+        <div class="topPart-calc">
+            <div class="title"><h1>калькулятор</h1></div>
+            <div class="description">
+              <div class="description-wrap">
+                <p>Предварительная оценка <span>(стоимость и срок)</span> дизайна сайта и разработки под ключ</p>
+              </div>
+            </div>
+            <a href="#" id="pricelistToggle">весь прайс-лист</a>
+            <div class="calcPart">
+                <div class="tabs">
+                    <div class="tab tab1 active">
+                        <span>тип сайта</span>
+                    </div>
+                    <div class="tab tab2">
+                        <span>структура</span>
+                    </div>
+                    <div class="tab tab3">
+                        <span>доп. услуги</span>
+                    </div>
+                    <div class="tab tab4">
+                        <span>условия</span>
+                    </div>
+                    <div class="tab tab5">
+                        <span>заявка</span>
+                    </div>
+                </div>
+                <div class="tabsContent active" id="type_site">
+                    <div class="mainPart">
+                        <form action="">
+                            <div class="title">Выберите тип сайта</div>
+                            <input type="radio" name="site_type" id="landing-page"><label for="landing-page"><p class="title">Лендинг</p>
+                            <p class="description">Одноэкранники, одностраничники, посадочные страницы</p></label>
+                            <input type="radio" name="site_type" id="visitka-page"><label for="visitka-page"><p class="title">Сайт-визитка</p>
+                            <p class="description">Сайт с одним товаром или услугой. Минимальный вариант для представления компании в сети Интернет</p></label>
+                            <input type="radio" name="site_type" id="catalog-page"><label for="catalog-page"><p class="title">Сайт-каталог</p>
+                            <p class="description">Много товаров или услуг, без онлайн-оплаты</p></label>
+                            <input type="radio" name="site_type" id="eshop_noPC"><label for="eshop_noPC"><p class="title">Интернет-магазин без ЛК</p>
+                            <p class="description">Много товаров или услуг, с онлайн-оплатой, без личного кабинета</p></label>
+                            <input type="radio" name="site_type" id="eshop_PC"><label for="eshop_PC"><p class="title">Интернет-магазин с ЛК</p>
+                            <p class="description">Много товаров или услуг, с онлайн-оплатой, с личным кабинетом</p></label>
+                            <input type="radio" name="site_type" id="otherTypes"><label for="otherTypes"><p class="title">Прочие типы сайтов</p>
+                            <p class="description">Блоги, порталы, корпоративные сайты, сайты-сервисы, агрегаторы и т.д.</p></label>
+                        </form>
+                        <div class="sidebar">
+                            <div class="sidebar_wrap">
+                                <p>Средняя стоимость<span> дизайна этого типа сайта</span>:</p>
+                                <span>150 - 400 т.р.</span>
+                                <p>Срок разработки:</p>
+                                <span>200 - 300 ч.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonRow"><button class="next_step">Далее</button></div>
+                </div>
+                <div class="tabsContent " id="structure">
+                    <div class="mainPart">
+                        <div class="contentPart">
+                            <div class="title">Стандартная структура этого типа сайта</div>
+                            <table class="desktop">
+                                <thead>
+                                    <tr>
+                                        <th class="name">Название страницы</th>
+                                        <th class="time">Время, часы</th>
+                                        <th class="cost">Стоимость, руб.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="dropdown_box">
+                                                <i class="fa fa-list" aria-hidden="true"></i>
+                                                <ul class="dropdown_list">
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                </ul>
+                                            </div>
+                                            Главная
+                                        </td>
+                                        <td>16 - 24</td>
+                                        <td>24 - 36</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dropdown_box">
+                                                <i class="fa fa-list" aria-hidden="true"></i>
+                                                <ul class="dropdown_list">
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                </ul>
+                                            </div>Каталог</td>
+                                        <td>16 - 24</td>
+                                        <td>24 - 36</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dropdown_box">
+                                                <i class="fa fa-list" aria-hidden="true"></i>
+                                                <ul class="dropdown_list">
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                </ul>
+                                            </div>Страница товара</td>
+                                        <td>16 - 24</td>
+                                        <td>24 - 36</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="dropdown_box">
+                                                <i class="fa fa-list" aria-hidden="true"></i>
+                                                <ul class="dropdown_list">
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                </ul>
+                                            </div>Поиск пустой (с результатами)</td>
+                                        <td>16 - 24</td>
+                                        <td>24 - 36</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="mobile">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Название страницы</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="dropdown_box">
+                                                <i class="fa fa-list" aria-hidden="true"></i>
+                                                <ul class="dropdown_list">
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                </ul>
+                                            </div>
+                                            Главная
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="noborder">Время, часы</td>
+                                        <td class="noborder">Цена, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16 - 24</td>
+                                        <td>24 - 36</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="mobile">
+                                <thead>
+                                    <tr>
+                                        <th  colspan="2">Название страницы</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="dropdown_box">
+                                                <i class="fa fa-list" aria-hidden="true"></i>
+                                                <ul class="dropdown_list">
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                    <li>Элемент страницы</li>
+                                                </ul>
+                                            </div>
+                                            Главная
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="noborder">Время, часы</td>
+                                        <td class="noborder">Цена, руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16 - 24</td>
+                                        <td>24 - 36</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <form action="">
+                                <input type="checkbox" id="mobile_needed"><label for="mobile_needed">Необходима отрисовка мобильной версии сайта<span>*</span></label>
+                            </form>
+                            <div class="morePages_wrap">
+                                <span>Необходимо еще </span>
+                                <form action="">
+                                    <button class="less">-</button>
+                                    <input type="number" value="0" min="0">
+                                    <button class="more">+</button>
+                                </form>
+                                <span> дополнительных страниц</span>
+                            </div>
+                            <div class="notification">
+                                *Отрисовка дизайна планшетной версии сайта стандартной сетки (95% случаев) не требуется
+                            </div>
+                        </div>
+                        <div class="sidebar">
+                            <div class="sidebar_wrap">
+                                <p>Средняя стоимость<span> дизайна этого типа сайта</span>:</p>
+                                <span>150 - 400 т.р.</span>
+                                <p>Срок разработки:</p>
+                                <span>200 - 300 ч.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonRow"><button class="next_step">Далее</button></div>
+                </div>
+                <div class="tabsContent " id="services">
+                    <div class="mainPart">
+                        <div class="contentPart">
+                            <form action="">
+                                <input type="checkbox" id="layout">
+                                <label for="layout">Верстка
+                                    <span class="dropdown_box">
+                                        <span class="title">Для программирования:</span>
+                                        <p>Услуги по программированию оказываются только в рамках заказа дизайна и верстки сайта. Окончательная оценка предоставляется только после утверждения дизайна</p>
+                                        <p>В качестве CMS могут использоваться:</p>
+                                        <ul>
+                                            <li>WordPress, Joomla, Opencart</li>
+                                            <li>Битрикс (предпочтение редакции "Старт")</li>
+                                            <li>WEBITEC (собственная разработка)</li>
+                                        </ul>
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="programming">
+                                <label for="programming">Программирование
+                                    <span class="dropdown_box">
+                                        <span class="title">Для программирования:</span>
+                                        <p>Услуги по программированию оказываются только в рамках заказа дизайна и верстки сайта. Окончательная оценка предоставляется только после утверждения дизайна</p>
+                                        <p>В качестве CMS могут использоваться:</p>
+                                        <ul>
+                                            <li>WordPress, Joomla, Opencart</li>
+                                            <li>Битрикс (предпочтение редакции "Старт")</li>
+                                            <li>WEBITEC (собственная разработка)</li>
+                                        </ul>
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="sidebar">
+                            <div class="sidebar_wrap">
+                                <p>Средняя стоимость<span> дизайна этого типа сайта</span>:</p>
+                                <span>150 - 400 т.р.</span>
+                                <p>Срок разработки:</p>
+                                <span>200 - 300 ч.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonRow"><button class="next_step">Далее</button></div>
+                </div>
+                <div class="tabsContent " id="conditions">
+                    <div class="mainPart">
+                        <div class="contentPart">
+                            <div class="title">Условия работы</div>
+                            <p class="paragraph">4.1.1.</p>
+                            <p class="content">Цены в расчете указаны при оплате на карту ФЛ (ставка при этом - 1,5 т.р./ч.). Если вы хотите оплатить на ИП, ставка - 1,8 т.р./ч. (минимальный размер счета - 50 т.р.), на ООО ставка - 2,5 т.р./ч. (минимальный размер счета - 500 т.р.).</p>
+                            <p class="paragraph">4.1.2. </p>
+                            <p class="content">Правок по качеству не бывает. Если вы хотите получить бесплатные правки, от вас требуется заключение главных дизайнеров трех лидирующих в России по качеству веб-студий: Лебедев, AiC, Николенд).</p>
+                            <p class="content">Все доработки платные, оцениваются по факту получения, предоплачиваются 100% единым платежом согласно почасовой ставке по выбранному вами способу оплаты (п. 4.1.1.).</p>
+                            <p class="content">Статистика доработок: 95% вредны с точки зрения дизайна и интернет-маркетинга (причину объясняем), 5 % бесполезны. </p>
+                            <p class="paragraph">4.1.3.</p>
+                            <p class="content">Все консультации (ответы на вопросы, коммуникации) до, во время и после проекта платные (согласно ставке выбранного вами способа оплаты (п. 4.1.1.)). 100% предоплата за каждые 2 ч.</p>
+                            <p class="content">Статистика консультаций: 5 ч. на каждый 200 ч. нашей работы.</p>
+                            <p class="paragraph">4.1.4.</p>
+                            <p class="content">Оценка калькулятора является предварительной, точная оценка дается в рамках часовой платной (3 т.р. - при оплате на карту ФЛ, 4 т.р. - при оплате на ИП</p>
+                        </div>
+                        <div class="sidebar">
+                            <div class="sidebar_wrap">
+                                <p>Средняя стоимость<span> дизайна этого типа сайта</span>:</p>
+                                <span>150 - 400 т.р.</span>
+                                <p>Срок разработки:</p>
+                                <span>200 - 300 ч.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonRow"><button class="next_step">Далее</button></div>
+                </div>
+                <div class="tabsContent " id="orderPage">
+                    <div class="mainPart">
+                        <div class="contentPart">
+                            <div class="title">Заполните форму заявки</div>
+                            <form action="">
+                                <div class="section_top">
+                                    <div class="data_wrap">
+                                        <div class="data_row">
+                                            <input type="text" placeholder="ФИО">
+                                            <input type="text" placeholder="Компания">
+                                        </div>
+                                        <div class="data_row">
+                                            <input type="text" placeholder="Сайт компании">
+                                            <input type="text" placeholder="Бюджет на проект">
+                                        </div>
+                                        <div class="data_row">
+                                            <input type="file" id="fileDeploy">
+                                            <label for="fileDeploy"><span><img src="template/img/clip.png" alt="clip"></span><span>Прикрепить ТЗ / прототип</span></label>
+                                        </div>
+                                        <div class="data_row">
+                                            <a href="#" class="prepayment">оплатить оценку, стоимость 3 т.р.</a>
+                                            <a href="#" class="receiveBill">получить счет, стоимость 4 т.р.</a>
+                                        </div>
+                                    </div>
+                                    <div class="comments_wrap">
+                                        <textarea placeholder="Коментарий"></textarea>
+                                    </div>
+                                </div>
+                                <div class="input_wrap">
+                                    <input type="checkbox" id="calcPolicies">
+                                    <label for="calcPolicies">
+                                        <span>Принимаю </span>
+                                        <span><a href="#">Пользовательское соглашение</a></span>
+                                        <span> и </span>
+                                        <span><a href="#">Политику конфиденциальности</a></span>
+                                    </label>
+                                </div>
+                            </form>
+                            <p>Я свяжусь с вами втечение суток. Для связи и переговоров просьба стучаться ко мне в Skype: <a href="skype:s.mordvincev.com">s.mordvincev.com</a></p>
+                        </div>
+                    </div>
+                    <div class="buttonRow"><button class="send_order">Отправить</button></div>
+                </div>
+            </div>
+        </div>
+
+    <!-- FOOTER -->
+        <div class="footer">
+            <div class="foot-text">
+                <div class="skype-holder">
+                    <i class="fa fa-skype" aria-hidden="true"></i>
+                    <a href="skype:sales.mvacorp">sales.mvacorp</a>
+                </div>
+                <div class="foot-holder">
+                    <span>mvacorp &copy 2009-2017</span>
+                    <div class="divider"></div>
+                    <span>дизайн сайтов. лендингов. интрефейсов.</span>
+                </div>
+            </div>
+            <div class="policy-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Использование cookies</a>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </section>
+ 
+
+<div class="mail-order">
+    <div class="visible-part">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p>Нужен дизайн? Отправьте письмо!</p>
+    </div>
+    <div class="hidden-part">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="menu-desktop">
+    <div class="menu-close">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>
+        <li><a href="#">Дизайн сайтов</a></li>
+        <li><a href="#">Прочие услуги по дизайну</a></li>
+        <li><a href="#">Верстка и программирование</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">Схема работы</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Преимущества</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</div>
+
+<!-- ФОРМА ЗАКАЗАТЬ -->
+<div id="win" style="display: none;">
+   <div class="overlay"></div>
+      <div class="visible">
+        <div class="red-block"></div>
+        <button type="button" onClick="getElementById('win').style.display='none';" class="close-window"><img src="template/img/close-button.png" alt="close-window"></button>
+        <h2>дизайн чего хотите заказать?</h2>
+        <span id="win-desc">на каждую услугу заполняется отдельная форма</span>
+          <form action="#" name="popup">
+              <div class="popup-select-style">
+                  <select name="popup-select" id="popup-select">
+                      <option value="Лендинг">Лендинг</option>
+                      <option value="Сайт">Сайт</option>
+                      <option value="API">Мобильное приложение</option>
+                      <option value="Продукт">Десктопное ПО</option>
+                      <option value="Продукт">SaaS</option>
+                      <option value="Продукт">Презентация</option>
+                      <option value="Продукт">Инфографика</option>
+                      <option value="Продукт">Соцсети</option>
+                      <option value="Продукт">Баннера</option>
+                  </select>
+                  <div class="select-arrow"></div>
+              </div>
+              <span id="win-add">дополнительно нужно:</span>
+              <div class="win-add-input">
+                <input type="checkbox" class="win-add-checkbox" id="layout">
+                <label for="layout"><span></span>Верстка</label>
+              </div>
+              <div class="win-add-input">
+                <input type="checkbox" class="win-add-checkbox" id="programming">
+                <label for="programming"><span></span>Программирование</label>
+              </div>
+              <div class="win-add-input">
+                  <input type="checkbox" class="win-add-checkbox" id="int-mark">
+                  <label for="int-mark"><span></span>Интернет-маркетинг</label>
+              </div>
+              <div class="win-add-input">
+                  <input type="phone" class="phone-input" placeholder="Номер телефона" id="phone">
+              </div>
+              <div class="win-add-input">
+                  <input type="email" class="email-input" placeholder="email@example.com">
+              </div>
+              <div class="win-add-input policy">
+                  <input type="checkbox" class="win-add-checkbox" id="confirm-policy">
+                  <label for="confirm-policy" class="policyForm-label"><span></span><span class="label-policy">Я принимаю <a href="#" class="policyForm-text">пользовательское соглашение</a> и <a href="#" class="policyForm-text">политику конфиденциальности</a></span></label>
+              </div>
+              <input type="submit" class="submit-button-form" value="заказать услугу">
+          </form>
+        
+    </div>
+</div>
+<!-- END ФОРМА ЗАКАЗАТЬ -->
+
+<!-- ОБРАТНЫЙ ЗВОНОК -->
+<div id="win1" style="display: none;">
+ <div class="overlay"></div>
+    <div class="visible">
+      <div class="red-block"></div>
+      <button type="button" onClick="getElementById('win1').style.display='none';" class="close-window"><img src="template/img/close-button.png" alt="close-window"></button>
+      <h2>Обратный звонок</h2>
+        <form action="#" name="popup">
+            <div class="win-add-input">
+                <input type="text" class="phone-input" placeholder="Имя">
+            </div>
+            <div class="win-add-input">
+                <input type="phone" class="email-input" placeholder="Номер телефона" id="phone1">
+            </div>
+            <div class="win-add-input">
+                <input type="checkbox" class="win-add-checkbox" id="confirm-policy1">
+                <label for="confirm-policy1" class="policyForm-label"><span></span><span class="label-policy">Я принимаю <a href="#" class="policyForm-text">пользовательское соглашение</a> и <a href="#" class="policyForm-text">политику конфиденциальности</a></span></label>
+            </div>
+            <input type="submit" class="submit-button-form" value="заказать услугу">
+        </form>
+      
+  </div>
+</div>
+<!-- END ОБРАТНЫЙ ЗВОНОК -->
+
+
+<script src="template/js/jquery-3.1.0.min.js"></script>
+<script src="template/js/bootstrap.min.js"></script>
+
+<script src="https://use.fontawesome.com/9ae2a3549a.js"></script>
+<script src="template/js/main.js"></script>
+<script src="template/js/calc.js"></script>
+
+</body>
+</html>

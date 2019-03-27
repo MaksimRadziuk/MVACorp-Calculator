@@ -1,0 +1,1366 @@
+* {
+    box-sizing: border-box;
+}
+#section-calc .footer .skype-holder i, 
+#section-calc .foot-text .foot-holder span,
+#section-calc .foot-text .skype-holder a {
+    color: #394048;
+}
+#section-calc {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #717982;
+    position: relative;
+}
+.topPart-calc {
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+    height: auto;
+}
+.title {
+    position: absolute;
+    width: 46%;
+    height: 80px;
+    top:150px;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+    pointer-events: none;
+}
+.title h1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 4.9vw;
+    opacity: 0.1;
+    animation: 3s titleAppearance ease;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Bicubik;
+    margin: 0;
+}
+.topPart-calc>.description {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 50%;
+    height: 230px;
+    border-left: 1px solid #a8c61e;
+}
+@keyframes titleAppearance {
+    0% {
+        top: 150px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+.topPart-calc>.description>.description-wrap {
+    position: relative;
+    margin-top: 160px;
+    padding-left: 20px;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    letter-spacing: 1px;
+}
+.topPart-calc>.description>.description-wrap:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 5px;
+    height: 70px;
+    background-color: #a8c61e;
+}
+.topPart-calc>.description>.description-wrap p{
+    display: inline-block;
+    font-family: Bicubik, sans-serif;
+    font-size: 14px;
+    text-transform:uppercase;
+    max-width: 460px;
+    line-height: 1.8;
+    margin: 0;
+    letter-spacing: 1px;
+}
+#pricelistToggle {
+    display: block;
+    font-size: 16px;
+    font-family: Bicubik;
+    color: #fff;
+    text-align:center;
+    height: 70px;
+    padding: 0 50px;
+    background-color: #394048;
+    position: absolute;
+    left: 80%;
+    top: 160px;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+#pricelistToggle:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.calcPart {
+    margin-top: 230px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    min-height: calc(100vh - 230px);
+    background-color: #fff;
+}
+.calcPart .tabs {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.calcPart .tabs .tab {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+.calcPart .tabs .tab>span {
+    opacity: .2;
+    color: #fff;
+}
+.calcPart .tabs .tab.tab2 {
+    background-color: #394048;
+}
+.calcPart .tabs .tab.tab3{
+    background-color: #12c5c7;
+}
+.calcPart .tabs .tab.tab4{
+    background-color: #f54657;
+}
+.calcPart .tabs .tab.tab5{
+    background-color: #a8c61e;
+}
+.calcPart .tabs .tab.active {
+    background-color: transparent;
+}
+.calcPart .tabs .tab.active>span {
+    opacity: 1;
+    color:#394048;
+}
+/* .calcPart .tabs .tab.tab3.active,
+.calcPart .tabs .tab.tab2.active,
+.calcPart .tabs .tab.tab5.active,
+.calcPart .tabs .tab.tab4.active{
+    border-left:1px dotted #acb0b5;
+} */
+.calcPart .tabsContent {
+    width: 100%;
+    display: none;
+    clear: both;
+    min-height: calc(100vh - 230px);
+    height: auto;
+}
+.calcPart .tabsContent.active {
+    display: block;
+}
+.calcPart .tabsContent .mainPart {
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.calcPart #type_site .mainPart form {
+    width: 80%;
+    overflow:auto;
+    padding-left: 80px;
+}
+.calcPart #type_site .mainPart form>.title {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 600;
+    width: 100%;
+    text-align:left;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    float: left;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+}
+.calcPart #type_site .mainPart form>input {
+    display: none;
+}
+.calcPart #type_site .mainPart form>label {
+    display: block;
+    float: left;
+    width: 24.9%;
+    position: relative;
+    padding-left: 50px;
+    height: 190px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.calcPart #type_site .mainPart form>label .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    color: #394048;
+    font-family: Roboto;
+    width: 100%;
+}
+.calcPart #type_site .mainPart form>label .description {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    color: #394048;
+}
+.calcPart #type_site .mainPart form>label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:1px solid #acb0b5;
+}
+.calcPart #type_site .mainPart form>input:checked + label:before{
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-image: url(../img/bcg_radio_checked.png);
+}
+.calcPart .tabsContent .sidebar {
+    width: 20%;
+}
+.calcPart .tabsContent .sidebar .sidebar_wrap {
+    width: 100%;
+    border-right: 25px solid #16b7ba;
+    background-color: #12c5c7;
+    padding:40px;
+    margin-top: 50px;
+}
+.calcPart .tabsContent .sidebar .sidebar_wrap p{
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.calcPart .tabsContent .sidebar .sidebar_wrap p>span {
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    display: inline;
+}
+.calcPart .tabsContent .sidebar .sidebar_wrap span{
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: block;
+}
+.calcPart .tabsContent .sidebar .sidebar_wrap span:last-child{
+    margin-bottom: 0px;
+}
+.calcPart .tabsContent .buttonRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+.calcPart .tabsContent .buttonRow button {
+    border:none;
+    background-color: #394048;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 50px;
+    height: 70px;
+}
+
+.calcPart .mainPart .contentPart{
+    width: 80%;
+    padding-left: 80px;
+}
+.calcPart #structure .mainPart .contentPart>.title {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 600;
+    width: 100%;
+    text-align:left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+}
+
+.calcPart #structure table {
+    width: 90%;
+    font-size: 16px;
+    font-family: Roboto;
+    margin-bottom: 40px;
+}
+.calcPart #structure table th.time,
+.calcPart #structure table th.cost {
+    width: 20%;
+}
+.calcPart #structure table th.time {
+    border-left:1px solid #7d8287;
+    border-right:1px solid #7d8287;
+}
+.calcPart #structure table th {
+    background-color: #394048;
+    color: #fff;
+    padding-left: 30px;
+    height: 70px;
+}
+.calcPart #structure table td {
+    height: 50px;
+    border:1px solid #e5e5e5;
+    padding-left: 30px;
+}
+.calcPart #structure table td>.dropdown_box {
+    margin-right: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    text-align:center;
+}
+.calcPart #structure table td>.dropdown_box:hover {
+    background-color: #394048;
+}
+.calcPart #structure table td>.dropdown_box:hover i{
+    color: #fff;
+}
+.calcPart #structure table td>.dropdown_box i {
+    font-size: 16px;
+    color: #394048;
+}
+.calcPart #structure table td>.dropdown_box:hover .dropdown_list{
+    display: block;
+}
+.calcPart #structure table td>.dropdown_box .dropdown_list {
+    display: none;
+    position: absolute;
+    top: -25px;
+    left: 35px;
+    background-color: #394048;
+    padding: 30px 40px;
+    margin: 0;
+    z-index: 2;
+    list-style: none;
+    width: 260px;
+}
+.calcPart #structure table td>.dropdown_box .dropdown_list:before {
+    content: '';
+    background-color: #394048;
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 28px;
+    left: -6px;
+    transform:rotateZ(45deg);
+}
+.calcPart #structure table td>.dropdown_box .dropdown_list li {
+    color: #fff;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+    margin-bottom: 10px;
+}
+.calcPart #structure table td>.dropdown_box .dropdown_list li:last-child {
+    margin-bottom: 0;
+}
+.calcPart #structure table td>.dropdown_box .dropdown_list li:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #9ca0a4;
+    top: 7px;
+    left: 0;
+}
+.calcPart #structure table tbody tr:first-child td{
+    border-top:none;
+}
+.calcPart #structure table tbody tr:last-child td{
+    border-bottom:none;
+}
+.calcPart #structure table tbody td:first-child {
+    border-left:none;
+}
+.calcPart #structure table tbody td:last-child {
+    border-right:none;
+}
+.calcPart #structure table.mobile {
+    display: none;
+}
+.calcPart #structure .contentPart>form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.calcPart #structure .contentPart>form input {
+    display: none;
+}
+.calcPart #structure .contentPart>form label {
+    padding-left: 50px;
+    position: relative;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #394048;
+    height: auto;
+    font-weight: 400;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.calcPart #structure .contentPart>form label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border:1px solid #e5e5e5;
+}
+.calcPart #structure .contentPart>form input:checked + label:before {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(../img/bcg_checkbox_checked.png);
+    background-position: center center;
+}
+.calcPart #structure .contentPart>form label>span {
+    font-size: 16px;
+    color: #f54657;
+    margin: 0;
+    display: inline;
+    background-color: transparent;
+    background-image: none;
+}
+.calcPart #structure .morePages_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #394048;
+    margin-bottom: 30px;
+}
+.calcPart #structure .morePages_wrap>form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.calcPart #structure .morePages_wrap span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #394048;
+}
+.calcPart #structure .morePages_wrap>form button {
+    display: inline;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border:none;
+    font-size: 30px;
+    color: #394048;
+    padding: 0 7px 0 10px;
+}
+.calcPart #structure .morePages_wrap>form input {
+    width: 40px;
+    height: 25px;
+    border:1px solid #e5e5e5;
+    font-size: 18px;
+    color: #394048;
+    text-align: center;
+}
+.calcPart #structure .notification {
+    font-size: 16px;
+    color: #f54657;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+.calcPart #services form {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    padding-top: 90px;
+}
+.calcPart #services form input {
+    display: none;
+}
+.calcPart #services form label {
+    padding-left: 50px;
+    position: relative;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #394048;
+    height: auto;
+    font-weight: 400;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 90px;
+}
+.calcPart #services form label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border:1px solid #e5e5e5;
+}
+.calcPart #services form input:checked + label:before {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url(../img/bcg_checkbox_checked.png);
+    background-position: center center;
+}
+.calcPart #services form label .dropdown_box {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background-color: #394048;
+    width: 500px;
+    padding: 30px 40px;
+    z-index: 2;
+    height: auto;
+    background-image: none;
+}
+.calcPart #services form label:hover .dropdown_box {
+    display: block;
+}
+.calcPart #services form label .dropdown_box:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(45deg);
+    top: -6px;
+    left: 30px;
+    background-color: #394048;
+    z-index: 1;
+}
+.calcPart #services form label:hover .dropdown_box .title {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    background-image: none;
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.calcPart #services form label:hover .dropdown_box p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+}
+.calcPart #services .buttonRow {
+    margin-top: 150px;
+}
+.calcPart #conditions .mainPart .contentPart {
+    padding-right: 50px;
+}
+.calcPart #conditions .mainPart .contentPart>.title {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 600;
+    width: 100%;
+    text-align:left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+}
+.calcPart #conditions p.paragraph{
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #394048;
+}
+.calcPart #conditions p.content{
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #394048;
+    line-height: 1.2;
+}
+.calcPart #conditions .buttonRow {
+    margin-top: 40px;
+}
+
+#orderPage .contentPart {
+    width: 100%;
+    padding-right: 80px;
+}
+.calcPart #orderPage .mainPart .contentPart>.title {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 600;
+    width: 100%;
+    text-align:left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+}
+.calcPart #orderPage .mainPart .contentPart .section_top {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.calcPart #orderPage .mainPart .contentPart .data_wrap,
+.calcPart #orderPage .mainPart .contentPart .comments_wrap {
+    width: 50%;
+}
+.calcPart #orderPage .mainPart .contentPart .data_wrap {
+    padding-right: 25px;
+}
+.calcPart #orderPage .mainPart .contentPart .comments_wrap {
+    padding-left: 25px;
+}
+.calcPart #orderPage .data_row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.calcPart #orderPage .data_row:last-child {
+    margin-bottom: 0;
+}
+.calcPart #orderPage .data_row:nth-child(2),
+.calcPart #orderPage .data_row:nth-child(3) {
+    margin-bottom: 30px;
+}
+.calcPart #orderPage .data_row>input[type="text"] {
+    width: 47%;
+    height: 40px;
+    border:1px solid #e5e5e5;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #394048;
+}
+.calcPart #orderPage .data_row>input:focus {
+    outline: none;
+}
+.calcPart #orderPage .data_row>input:placeholder {
+    color: #9fa5ac;
+    font-size: 16px;
+}
+.calcPart #orderPage .comments_wrap textarea {
+    width: 100%;
+    height: 250px;
+    border:1px solid #e5e5e5;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #394048;
+    padding-top: 10px;
+    resize: none;
+}
+.calcPart #orderPage .comments_wrap textarea:focus {
+    outline: none;
+}
+.calcPart #orderPage .comments_wrap textarea:placeholder {
+    color: #9fa5ac;
+}
+.calcPart #orderPage .data_row>input[type="file"] {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 0.1px;
+    height: 0.1px;
+}
+.calcPart #orderPage .data_row>label {
+    text-decoration:underline;
+    cursor: pointer;
+}
+.calcPart #orderPage .data_row>label img {
+    margin-right: 10px;
+}
+.calcPart #orderPage .data_row>label span {
+    color: #394048;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+.calcPart #orderPage .data_row>a {
+    width: 47%;
+    height: 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    text-align:center;
+    line-height: 40px;
+}
+.calcPart #orderPage .data_row>a.prepayment {
+    background-color: #12c5c7;
+}
+.calcPart #orderPage .data_row>a.receiveBill {
+    background-color: #a8c61e;
+}
+.calcPart #orderPage .input_wrap {
+    width: 100%;
+}
+.calcPart #orderPage .input_wrap input {
+    display: none;
+}
+.calcPart #orderPage .input_wrap label {
+    padding-left: 50px;
+    position: relative;
+    height: auto;
+    width: auto;
+    font-weight: 400;
+}
+.calcPart #orderPage .input_wrap label>span {
+    color: #394048;
+    font-family: Roboto;
+    font-size: 14px;
+    width: auto;
+    background: none;
+    margin: 0;
+}
+.calcPart #orderPage .input_wrap label>span>a {
+    color:#12c5c7;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.calcPart #orderPage .input_wrap label:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border:1px solid #e5e5e5;
+}
+.calcPart #orderPage .input_wrap input:checked + label:before {
+    background-image: url(../img/bcg_checkbox_checked.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.calcPart #orderPage .contentPart>p {
+    font-size: 18px;
+    font-family: Roboto;
+    margin-top: 50px;
+    color: #394048;
+    margin-bottom: 50px;
+}
+.calcPart #orderPage .contentPart>p>a {
+    font-size: 18px;
+    font-family: Roboto;
+    color: #a8c61e;
+}
+
+@media all and (max-width:1680px) {
+    .calcPart #type_site .mainPart form>label {
+        width: 33.33334%;
+        margin-bottom:20px;
+    }
+    .topPart-calc>.description>.description-wrap p {
+        font-size: 12px;
+    }
+    #pricelistToggle {
+        left: auto;
+        right: 0;
+    }
+    .calcPart #structure table {
+        width: 94%;
+    }
+    .calcPart #orderPage .data_row>a {
+        padding: 7px 60px;
+        font-size: 13px;
+        line-height: 1;
+    }
+}
+@media all and (max-width:1470px) {
+    .topPart-calc>.description>.description-wrap p {
+        width: 300px;
+    }
+}
+@media all and (max-width:1440px) {
+    .calcPart .tabsContent .sidebar .sidebar_wrap {
+        padding: 30px;
+        padding-right: 15px;
+        border-right-width: 18px;
+    }
+}
+@media all and (max-width:1380px) {
+    .calcPart #orderPage .data_row>a {
+        padding: 7px 20px;
+    }
+}
+@media all and (max-width:1280px) {
+    .calcPart .tabsContent .sidebar .sidebar_wrap p {
+        font-size: 15px;
+    }
+    #section-calc .foot-text {
+        display: flex;
+        width: 750px;
+    }
+    #section-calc .languages {
+        display: none;
+    }
+    #section-calc .phones {
+        left: 57vw;
+    }
+    .calcPart {
+        margin-top: 180px;
+    }
+    .title {
+        height: 60px;
+        top: 120px;
+        padding: 0;
+    }
+    .title h1 {
+        padding:0;
+    }
+    .topPart-calc>.description {
+        height: 180px;
+    }
+    .topPart-calc>.description>.description-wrap {
+        margin-top: 110px;
+    }
+    #pricelistToggle {
+        top: 110px;
+    }
+    .calcPart #type_site .mainPart form,
+    .calcPart .mainPart .contentPart {
+        padding-left:40px;
+    }
+    .calcPart .tabs {
+        height: 60px;
+    }
+    .calcPart .tabs .tab {
+        font-size: 18px;
+    }
+    #orderPage .contentPart {
+        padding-right: 40px;
+    }
+    .calcPart #orderPage .mainPart .contentPart .section_top {
+        flex-direction:column;
+    }
+    .calcPart #orderPage .mainPart .contentPart .data_wrap, 
+    .calcPart #orderPage .mainPart .contentPart .comments_wrap{
+        width: 100%;
+        max-width: 960px;
+    }
+    .calcPart #orderPage .mainPart .contentPart .data_wrap {
+        padding-right: 0;
+    }
+    .calcPart #orderPage .mainPart .contentPart .comments_wrap{
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .calcPart #orderPage .comments_wrap textarea {
+        height: 140px;
+    }
+    .calcPart #orderPage .data_row>a {
+        padding-top: 14px;
+    }
+}
+@media all and (max-width:1215px) {
+    .topPart-calc>.description>.description-wrap p>span{
+        display: none;
+        font-size: 10px;
+    }
+    .topPart-calc>.description>.description-wrap p {
+        width: 265px;
+        font-size: 10px;
+    }
+    .topPart-calc>.description>.description-wrap,
+    .topPart-calc>.description>.description-wrap:before {
+        height: 50px;
+    } 
+    .topPart-calc>.description>.description-wrap {
+        margin-top: 130px;
+    }
+    #pricelistToggle {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 25px;
+        top: 130px;
+    }
+}
+@media all and (max-width:1100px) {
+    .title {
+        left: -20px;
+    }
+    .topPart-calc>.description {
+        left: 45%;
+        border-left: none;
+    }
+    #section-calc .phones {
+        left: 45%;
+    }
+    .calcPart #orderPage .contentPart>p {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+@media all and (max-width:1024px) {
+    .title {
+        top:130px;
+        height:50px;
+        left: -15px;
+    }
+    #pricelistToggle {
+        font-size: 14px;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap {
+        margin: 0;
+        padding: 25px;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap>p>span {
+        display: none;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap>p {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap span {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .calcPart .tabsContent .sidebar {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 40%;
+        border-right-width: 15px;
+    }
+    .calcPart #type_site .mainPart form {
+        width: 100%;
+        padding-right: 40px;
+    }
+    #section-calc .foot-text {
+        width: 360px;
+    }
+    .calcPart .mainPart .contentPart {
+        width: 100%;
+        padding-right: 40px;
+    }
+    .calcPart #structure .mainPart .contentPart>.title {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .calcPart #structure table {
+        width: 100%;
+    }
+    .calcPart #services form {
+        padding-top: 150px;
+    }
+}
+@media all and (max-width:950px) {
+    #pricelistToggle {
+        top: 115px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .title {
+        top: 120px;
+        height: 40px;
+    }
+    .calcPart .tabs {
+        height: 50px;
+    }
+    .calcPart .tabs .tab {
+        font-size: 12px;
+    }
+    .calcPart {
+        margin-top: 200px;
+    }
+    .topPart-calc>.description {
+        width: 100%;
+        height: 40px;
+        background-color: #5c646d;
+        top: 160px;
+        left: 0;
+        border:none;
+    }
+    .topPart-calc>.description>.description-wrap {
+        margin: 0;
+        padding: 0;
+        text-align:center;
+        width: 100%;
+        height: 100%;
+        border:none; 
+    }
+    .topPart-calc>.description>.description-wrap:before {
+        display: none;
+    }
+    .topPart-calc>.description>.description-wrap p {
+        width: 100%;
+        max-width: 100%;
+        line-height: 40px;
+        font-family: Roboto;
+        text-transform:none;
+        font-size: 14px;
+    }
+    .topPart-calc>.description>.description-wrap p>span {
+        display: inline;
+        font-family: Roboto;
+        font-size: 14px;
+    }
+    .calcPart .tabsContent .sidebar {
+        top: 50px;
+    }
+}
+@media all and (max-width:860px) {
+    .calcPart .tabsContent .sidebar {
+        width: 100%;
+        height: 50px;
+        border-right: none;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap {
+        border-right: none;
+        padding: 0 20px;
+        line-height: 50px;
+        background-color: #0db6b8;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap>p {
+        font-size: 18px;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap span {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap span:last-child {
+        margin-right: 0;
+    }
+    .calcPart #type_site .mainPart form>.title {
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    .calcPart #structure .mainPart .contentPart>.title {
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .calcPart #structure table {
+        font-size: 14px;
+    }
+    .calcPart #structure table th {
+        height: 40px;
+        padding-left: 20px;
+    }
+    .calcPart #structure table th.time, 
+    .calcPart #structure table th.cost {
+        min-width: 140px;
+    }
+    .calcPart #conditions .mainPart .contentPart>.title {
+        margin-top: 90px;
+    }
+    .calcPart #orderPage .data_row>a {
+        height: auto;
+        padding: 14px 60px;
+        line-height: 1.4;
+    }
+}
+@media all and (max-width:768px) {
+    .calcPart #type_site .mainPart form>label {
+        width: 50%;
+    }
+    #section-calc .phones {
+        left: 330px;
+        top: 0;
+    }
+    .calcPart .mainPart .contentPart {
+        padding: 0 20px;
+    }
+    .calcPart .tabsContent .buttonRow button {
+        height: 45px;
+    }
+    .calcPart #services form {
+        padding-top: 100px;
+    }
+    .calcPart #services form label .dropdown_box {
+        left: 0;
+        width: 300px;
+    }
+    #orderPage .contentPart {
+        padding-right: 20px;
+    }
+}   
+@media all and (max-width:640px)  {
+    .title {
+        top: 130px;
+        height: 30px;
+    }
+    .calcPart #type_site .mainPart form {
+        padding: 0 20px;
+    }
+    .topPart-calc>.description>.description-wrap p,
+    .topPart-calc>.description>.description-wrap p>span {
+        font-size: 13px;
+    }
+    #win1 .visible {
+        width: 90%;
+        left: 5%;
+        height: auto;
+        min-height: 400px;
+    }
+    .calcPart #conditions .mainPart .contentPart {
+        padding-right: 20px;
+    }
+    .calcPart #orderPage .input_wrap label>span {
+        line-height: 1.2;
+        height: auto;
+    }
+    .calcPart #orderPage .input_wrap label:before {
+        top: 50%;
+        transform: translateY(-70%);
+    }
+}
+@media all and (max-width:620px) {
+    .calcPart .tabsContent .sidebar .sidebar_wrap>p {
+        font-size: 14px;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap span {
+        font-size: 15px;
+    }
+    .calcPart .tabs .tab {
+        font-size: 10px;
+    }
+    .topPart-calc>.description>.description-wrap p>span {
+        display: none;
+    }
+    .calcPart #orderPage .data_row>a {
+        padding: 14px 30px;
+    }
+}
+@media all and (max-width:600px) {
+    .phones {
+        display: block;
+    }
+    .order {
+        display: none;
+    }
+    .calcPart #services form {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    .calcPart #services form label {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width:500px) {
+    #section-calc .phones {
+        left: 270px;
+        top: 15px;
+        padding-top: 0;
+    }
+    .calcPart #type_site .mainPart form>label {
+        width: 100%;
+        padding-right: 15px;
+        height: auto;
+    }
+    .calcPart #type_site .mainPart form>label .title {
+        margin-bottom: 10px;
+    }
+    .calcPart #type_site .mainPart form>.title {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .calcPart .tabs {
+        height: 35px;
+    }
+    .calcPart .tabs .tab {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 35px;
+        z-index: 0;
+    }
+    .calcPart .tabs .tab.active {
+        z-index: 1;
+    }
+    .calcPart .tabs .tab.active>span {
+        color: #fff;
+    }
+    .calcPart .tabs .tab1.active {
+        background-color: #a8c61e;
+    }
+    .calcPart .tabs .tab2.active {
+        background-color: #394048;
+    }
+    .calcPart .tabs .tab3.active {
+        background-color: #394048;
+    }
+    .calcPart .tabs .tab4.active {
+        background-color: #f54657;
+    }
+    .calcPart .tabs .tab5.active {
+        background-color: #a8c61e;
+    }
+    .calcPart .tabsContent .sidebar {
+        top: 35px;
+    }
+    .topPart-calc>.description>.description-wrap p {
+        text-align:left;
+        padding-left: 15px;
+        line-height: 1;
+        font-size: 14px;
+    }
+    .topPart-calc>.description>.description-wrap {
+        padding-top: 5px;
+    }
+    .topPart-calc>.description {
+        top: 190px;
+    }
+    .calcPart {
+        margin-top: 230px;
+    }
+    #pricelistToggle {
+        top: 145px;
+        right: 50%;
+        transform: translateX(50%);
+        min-width: 240px;
+    }
+    .title {
+        top: 110px;
+        width: 100%;
+        left: 0;
+    }
+    .title h1{
+        font-size: 32px;
+        text-align:left;
+        padding-left: 15px;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap>span:nth-child(2){
+        margin-right: 25vw;
+    }
+    .calcPart .tabsContent .sidebar .sidebar_wrap {
+        line-height: 1.4;
+        padding: 15px;
+    }
+    .calcPart #structure table.desktop {
+        display: none;
+    }
+    .calcPart #structure table.mobile {
+        display: block;
+        margin-bottom: 0;
+    }
+    .calcPart #structure table.mobile tbody,
+    .calcPart #structure table.mobile thead {
+        width: 100%;
+    }
+    .calcPart #structure table.mobile th {
+        width: 100%;
+    }
+    .calcPart #structure table.mobile td {
+        width: 50%;
+        min-width: 44vw;
+    }
+    .calcPart #structure table.mobile td.noborder {
+        border-right: none;
+        border-left: none;
+    }
+    .calcPart #structure .contentPart>form {
+        margin-top: 30px;
+    }
+    .calcPart #structure .contentPart>form label {
+        padding-left: 40px;
+    }
+    .calcPart #structure table tbody tr:last-child td {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .calcPart #structure .morePages_wrap {
+        display: block;
+    }
+    .calcPart #structure .contentPart>form label:before {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .calcPart #orderPage .data_row {
+        flex-direction:column;
+        margin-bottom: 0;
+    }
+    .calcPart #orderPage .data_row>input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .calcPart #orderPage .data_row:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .calcPart #orderPage .data_row>a {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+    .calcPart #orderPage .mainPart .contentPart .comments_wrap {
+        margin-top: 0;
+    }
+}
+@media all and (max-width:360px) {
+    .calcPart .tabsContent .sidebar .sidebar_wrap>span:nth-child(2) {
+        margin-right: 0;
+    }
+    .phones a {
+        margin-right: 0;
+    }
+    .calcPart #services form label .dropdown_box {
+        left: -10px;
+    }
+}
